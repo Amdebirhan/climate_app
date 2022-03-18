@@ -29,6 +29,7 @@ class _LocationScreenState extends State<LocationScreen> {
   void updateUI(dynamic data) {
     setState(() {
       var temp = data['main']['temp'];
+      print(temp);
       temprature = temp.toInt();
       var condition = data['weather'][0]['id'];
       int id = condition.toInt();
